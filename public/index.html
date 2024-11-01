@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body class="bg-[#bbc6fa]">
+    <div
+      class="quote-box bg-[#fff] absolute top-1/2 left-1/2 w-[700px] rounded-[10px] p-[30px] translate-x-[-50%] translate-y-[-50%] text-center shadow-xl"
+    >
+      <h2 class="text-center text-[32px] font-playfair font-700">
+        Quote of the day
+      </h2>
+      <div class="border-b-4 border-[rgb(23,124,229)] w-16 mx-auto mt-2"></div>
+
+      <div class="favorite-category mt-5 font-playfair font-600 text-[20px]">
+        <p class="favCatagoryText">Write you favorite category:</p>
+        <button class="input-button">
+          <input
+            placeholder="EX:computer"
+            class="border border-[rgb(23,124,229)] mt-3 w-[150px] focus:outline-blue-600 font-sans px-3 py-[2px] rounded-sm input-field"
+            type="text"
+          />
+        </button>
+      </div>
+
+      <p
+        class="error-message mt-5 font-medium text-[18px] text-[#FF4C4C] hidden"
+      >
+        ...
+      </p>
+      <blockquote
+        class="quote font-[400px] min-h-[110px] text-center text-[25px] mt-8 before:content-['\0022'] after:content-['\0022'] hidden"
+      >
+        loading...
+      </blockquote>
+      <span
+        class="Writer mt-4 float-right relative before:content-[''] before:w-[20px] before:h-[2px] before:bg-blue-600 before:absolute before:top-1/2 before:left-[-30px] hidden"
+      >
+        Rabindranath Tagore
+      </span>
+      <div class="buttons justify-center gap-4 mt-14 hidden">
+        <button
+          class="new-quote bg-[rgb(23,124,229)] text-[#fff] px-7 py-3 rounded-full"
+        >
+          New Quote</button
+        ><button
+          onclick="tweet()"
+          class="tweet rounded-full px-8 border-2 border-[rgb(23,124,229)] flex justify-center items-center gap-2 text-[#333] bg-transparent"
+        >
+          <img class="w-4" src="x.com.jpg" alt="X logo" />Tweet
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
